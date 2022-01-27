@@ -71,7 +71,7 @@ header .theme {
 }
 header .theme__title button {
   color: white;
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 header .theme__toggle {
   align-items: center;
@@ -113,4 +113,35 @@ header .theme__toggle-field .switcher {
   color: white;
   direction: rtl;
   unicode-bidi: embed;
+}
+
+.numbers {
+  background-color: #232c43;
+  border-radius: 0.75rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1.8rem;
+  gap: 1rem;
+}
+.numbers button {
+  background-color: #eae3dc;
+  color: #444b5a;
+  padding: 1rem 0;
+  font-size: 1.75rem;
+  border-radius: 0.5rem;
+  box-shadow: -0.5px 3.5px 0px -1px #b4a597;
+}
+.numbers .blue {
+  background-color: #637097;
+  color: white;
+  font-size: 1.3rem;
+  box-shadow: -0.5px 3.5px 0px -1px #404e72;
+}
+.numbers .red {
+  background-color: #d03f2f;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: -0.5px 3.5px 0px -1px #93261a;
+}
+.numbers .span-two {
+  grid-column: span 2;
 }

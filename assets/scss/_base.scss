@@ -26,7 +26,7 @@ header {
     &__title {
       button {
         color: v.$white;
-        font-size: 0.85rem;
+        font-size: 1rem;
       }
     }
 
@@ -75,5 +75,40 @@ header {
     color: v.$white;
     direction: rtl;
     unicode-bidi: embed;
+  }
+}
+
+.numbers {
+  background-color: v.$very-dark-desaturated-blue-keypad-bg;
+  border-radius: 0.75rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1.8rem;
+  gap: 1rem;
+
+  button {
+    background-color: v.$light-grayish-orange;
+    color: v.$very-dark-grayish-blue;
+    padding: 1rem 0;
+    font-size: 1.75rem;
+    border-radius: 0.5rem;
+    box-shadow: -0.5px 3.5px 0px -1px hsl(28, 16%, 65%);
+  }
+
+  .blue {
+    background-color: v.$desaturated-dark-blue-key-bg;
+    color: v.$white;
+    font-size: 1.3rem;
+    box-shadow: -0.5px 3.5px 0px -1px hsl(224, 28%, 35%);
+  }
+
+  .red {
+    background-color: v.$red;
+    color: v.$white;
+    font-size: 1.5rem;
+    box-shadow: -0.5px 3.5px 0px -1px hsl(6, 70%, 34%);
+  }
+
+  .span-two {
+    grid-column: span 2;
   }
 }
