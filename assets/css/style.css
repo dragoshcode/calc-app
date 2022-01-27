@@ -22,6 +22,7 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+  font-family: "Spartan", sans-serif;
 }
 
 .flex-col {
@@ -36,4 +37,61 @@ button {
 
 .grid {
   display: grid;
+}
+
+body {
+  background-color: #3a4764;
+}
+
+main {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+header {
+  justify-content: space-between;
+}
+header .title {
+  color: white;
+  margin-top: 1.35rem;
+}
+header .theme {
+  gap: 1.2rem;
+  align-items: end;
+}
+header .theme__title button {
+  color: white;
+  font-size: 0.85rem;
+}
+header .theme__toggle {
+  align-items: center;
+  gap: 0.25rem;
+}
+header .theme__toggle-nums {
+  gap: 1rem;
+}
+header .theme__toggle-nums button {
+  color: white;
+  font-size: 1rem;
+}
+header .theme__toggle-field {
+  background-color: #232c43;
+  padding: 0.1rem 0.35rem;
+  border-radius: 1rem;
+  position: relative;
+}
+header .theme__toggle-field input {
+  opacity: 0.3;
+}
+header .theme__toggle-field .switcher {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #d03f2f;
+  border-radius: 50%;
+  top: 0.37rem;
+  left: 0.625rem;
+  pointer-events: none;
 }

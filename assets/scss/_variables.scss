@@ -1,14 +1,14 @@
 // ### Theme 1
 // #### Backgrounds
 
-$very-dark-desaturated-blue: hsl(222, 26%, 31%); // (main background)
-$very-dark-desaturated-blue: hsl(223,31%, 20%); // (toggle background, keypad background)
-$very-dark-desaturated-blue: hsl(224, 36%, 15%); // (screen background)
+$very-dark-desaturated-blue-main-bg: hsl(222, 26%, 31%); // (main background)
+$very-dark-desaturated-blue-keypad-bg: hsl(223,31%, 20%); // (toggle background, keypad background)
+$very-dark-desaturated-blue-screen-bg: hsl(224, 36%, 15%); // (screen background)
 
 // #### Keys
 
-$desaturated-dark-blue: hsl(225, 21%, 49%); // (key background)
-$desaturated-dark-blue: hsl(224, 28%, 35%); //(key shadow)
+$desaturated-dark-blue-key-bg: hsl(225, 21%, 49%); // (key background)
+$desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%); //(key shadow)
 
 $red: hsl(6, 63%, 50%); //(key background, toggle)
 $dark-red: hsl(6, 70%, 34%); // (key shadow)
@@ -37,7 +37,7 @@ $orange: hsl(25, 98%, 40%); // (key background, toggle)
 $dark-orange: hsl(25, 99%, 27%); // (key shadow)
 
 $light-grayish-yellow: hsl(45, 7%, 89%); // (key background)
-$dark-grayish-orang: hsl(35, 11%, 61%); //e (key shadow)
+$dark-grayish-orang: hsl(35, 11%, 61%); // (key shadow)
 
 // #### Text
 
