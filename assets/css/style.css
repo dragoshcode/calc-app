@@ -25,6 +25,14 @@ button {
   font-family: "Spartan", sans-serif;
 }
 
+input {
+  font-family: "Spartan", sans-serif;
+  border: none;
+}
+input:focus {
+  outline: 2px solid #637097;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -94,4 +102,15 @@ header .theme__toggle-field .switcher {
   top: 0.37rem;
   left: 0.625rem;
   pointer-events: none;
+}
+
+.input input {
+  width: 100%;
+  padding: 1.95rem 1.5rem;
+  font-size: 2rem;
+  border-radius: 0.75rem;
+  background-color: #182034;
+  color: white;
+  direction: rtl;
+  unicode-bidi: embed;
 }

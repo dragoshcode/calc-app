@@ -26,7 +26,7 @@ header {
     &__title {
       button {
         color: v.$white;
-        font-size: .85rem;
+        font-size: 0.85rem;
       }
     }
 
@@ -62,5 +62,18 @@ header {
         }
       }
     }
+  }
+}
+
+.input {
+  input {
+    width: 100%;
+    padding: 1.95rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 0.75rem;
+    background-color: v.$very-dark-desaturated-blue-screen-bg;
+    color: v.$white;
+    direction: rtl;
+    unicode-bidi: embed;
   }
 }

@@ -24,3 +24,11 @@ button {
   cursor: pointer;
   font-family: 'Spartan', sans-serif;
 }
+
+input {
+  font-family: 'Spartan', sans-serif;
+  border: none;
+  &:focus {
+    outline: 2px solid hsl(225, 21%, 49%);
+  }
+}
