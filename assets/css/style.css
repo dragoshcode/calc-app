@@ -24,7 +24,7 @@ button {
   cursor: pointer;
 }
 
-.flex-column {
+.flex-col {
   display: flex;
   flex-direction: column;
 }

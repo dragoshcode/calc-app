@@ -1,14 +1,13 @@
-.flex-column {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .flex {
-    display: flex;
-    align-items: center;
-  }
-  
-  .grid {
-    display: grid;
-  }
- 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
