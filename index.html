@@ -22,21 +22,18 @@
       </div>
       <div class="theme flex">
         <div class="theme__title">
-          <button>THEME</button>
+          <button class="theme__title-button">THEME</button>
         </div>
         <div class="theme__toggle flex-col">
           <div class="theme__toggle-nums flex">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
+            <button class="theme__toggle-nums-one">1</button>
+            <button class="theme__toggle-nums-two">2</button>
+            <button class="theme__toggle-nums-three">3</button>
           </div>
-          <div class="theme__toggle-field">
+          <div class="theme__toggle-field flex">
             <input type="radio" id="theme-one" name="toggle" checked>
-            <label for="theme-one"></label>
             <input type="radio" id="theme-two" name="toggle">
-            <label for="theme-two"></label>
             <input type="radio" id="theme-three" name="toggle">
-            <label for="theme-three"></label>
             <div class="switcher"></div>
           </div>
         </div>
@@ -44,7 +41,7 @@
     </header>
 
     <section class="input">
-      <input type="text">
+      <input class="input-field" type="text">
     </section>
 
     <section class="numbers grid">
@@ -63,7 +60,7 @@
       <button>.</button>
       <button>0</button>
       <button>/</button>
-      <button>x</button>
+      <button class="multiply">x</button>
       <button class="span-two blue">RESET</button>
       <button class="span-two red"> =</button>
     </section>
