@@ -1,24 +1,11 @@
-// const body = document.querySelector('body');
-// const themeSwitcher = document.querySelector('.switcher');
-// const themeNumOne = document.querySelector('.theme__toggle-nums-one');
-// const themeNumTwo = document.querySelector('.theme__toggle-nums-two');
-// const themeNumThree = document.querySelector('.theme__toggle-nums-three');
-
-// themeNumOne.addEventListener('click', (e) => {
-//   themeSwitcher.classList.add('translate-to-one');
-// });
-
-// themeNumTwo.addEventListener('click', () => {
-//   themeSwitcher.classList.add('translate-to-two');
-// });
-
-// themeNumThree.addEventListener('click', () => {
-//   themeSwitcher.classList.add('translate-to-three');
-// });
-
 const input = document.querySelector('.input-field');
 const buttons = Array.from(document.querySelectorAll('.numbers button'));
 let multiplyButton = document.querySelector('.multiply');
+const body = document.querySelector('body');
+const themeSwitcher = document.querySelector('.theme__toggle-field');
+const themeNumOne = document.querySelector('.theme__toggle-nums-one');
+const themeNumTwo = document.querySelector('.theme__toggle-nums-two');
+const themeNumThree = document.querySelector('.theme__toggle-nums-three');
 
 buttons.map((button) => {
   button.addEventListener('click', (e) => {
@@ -44,4 +31,21 @@ buttons.map((button) => {
         input.value += e.target.innerText;
     }
   });
+});
+
+themeNumOne.addEventListener('click', () => {
+  body.classList.remove('white-theme', 'purple-theme');
+  themeSwitcher.style.justifyContent = 'start';
+});
+
+themeNumTwo.addEventListener('click', () => {
+  body.classList.remove('purple-theme');
+  body.classList.add('white-theme');
+  themeSwitcher.style.justifyContent = 'center';
+});
+
+themeNumThree.addEventListener('click', () => {
+  body.classList.remove('white-theme');
+  body.classList.add('purple-theme');
+  themeSwitcher.style.justifyContent = 'end';
 });

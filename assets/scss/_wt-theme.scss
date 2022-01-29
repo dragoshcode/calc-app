@@ -1,1 +1,43 @@
 @use 'variables' as v;
+
+body.white-theme {
+  background-color: v.$light-gray;
+}
+
+body.white-theme .title {
+  color: v.$very-dark-desaturated-blue-keypad-bg;
+}
+
+body.white-theme .theme__title h2 {
+  color: v.$very-dark-grayish-yellow;
+}
+
+body.white-theme .theme__toggle-nums button {
+  color: v.$very-dark-grayish-yellow;
+}
+
+body.white-theme .theme__toggle-field {
+  background-color: v.$grayish-red;
+}
+body.white-theme input {
+  background-color: v.$white;
+  color: v.$very-dark-grayish-yellow;
+}
+
+body.white-theme .numbers {
+  background-color: v.$grayish-red;
+
+  button {
+    background-color: v.$very-light-gray;
+  }
+
+  .blue {
+    background-color: v.$dark-moderate-cyan;
+    box-shadow: -0.5px 3.5px 0px -1px v.$very-dark-cyan;
+  }
+
+  .red {
+    background-color: v.$orange;
+    box-shadow: -0.5px 3.5px 0px -1px v.$dark-orange;
+  }
+}

@@ -50,6 +50,7 @@ input:focus {
 body {
   background-color: #3a4764;
   overflow: hidden;
+  transition: 0.2s linear;
 }
 
 main {
@@ -71,7 +72,7 @@ header .theme {
   gap: 1.2rem;
   align-items: end;
 }
-header .theme__title button {
+header .theme__title h2 {
   color: white;
   font-size: 1rem;
 }
@@ -88,25 +89,15 @@ header .theme__toggle-nums button {
 }
 header .theme__toggle-field {
   background-color: #232c43;
-  padding: 0.1rem 0.35rem;
   border-radius: 1rem;
-  position: relative;
-  cursor: pointer;
-}
-header .theme__toggle-field input {
-  cursor: pointer;
-  opacity: 0.1;
+  width: 4rem;
 }
 header .theme__toggle-field .switcher {
-  position: absolute;
   width: 1rem;
   height: 1rem;
   background-color: #d03f2f;
   border-radius: 50%;
-  top: 0.29rem;
-  left: 0.625rem;
   pointer-events: none;
-  transition: 0.2s linear;
 }
 
 .input input {
@@ -149,6 +140,93 @@ header .theme__toggle-field .switcher {
 }
 .numbers .span-two {
   grid-column: span 2;
+}
+
+body.white-theme {
+  background-color: #e6e6e6;
+}
+
+body.white-theme .title {
+  color: #232c43;
+}
+
+body.white-theme .theme__title h2 {
+  color: #35352c;
+}
+
+body.white-theme .theme__toggle-nums button {
+  color: #35352c;
+}
+
+body.white-theme .theme__toggle-field {
+  background-color: #d1cccc;
+}
+
+body.white-theme input {
+  background-color: white;
+  color: #35352c;
+}
+
+body.white-theme .numbers {
+  background-color: #d1cccc;
+}
+body.white-theme .numbers button {
+  background-color: #ededed;
+}
+body.white-theme .numbers .blue {
+  background-color: #377f86;
+  box-shadow: -0.5px 3.5px 0px -1px #1b5f65;
+}
+body.white-theme .numbers .red {
+  background-color: #ca5502;
+  box-shadow: -0.5px 3.5px 0px -1px #893901;
+}
+
+body.purple-theme {
+  background-color: #160628;
+}
+
+body.purple-theme .title {
+  color: #ffe53d;
+}
+
+body.purple-theme .theme__title h2 {
+  color: #ffe53d;
+}
+
+body.purple-theme .theme__toggle-nums button {
+  color: #ffe53d;
+}
+
+body.purple-theme .theme__toggle-field {
+  background-color: #1d0934;
+}
+body.purple-theme .theme__toggle-field .switcher {
+  background-color: #00e0d1;
+}
+
+body.purple-theme input {
+  background-color: #1d0934;
+  color: #ffe53d;
+}
+
+body.purple-theme .numbers {
+  background-color: #1d0934;
+}
+body.purple-theme .numbers button {
+  background-color: #341c4f;
+  color: #ffe53d;
+  box-shadow: -0.5px 3.5px 0px -1px #871c9c;
+}
+body.purple-theme .numbers .blue {
+  background-color: #58077d;
+  box-shadow: -0.5px 3.5px 0px -1px #bc15f4;
+  color: white;
+}
+body.purple-theme .numbers .red {
+  background-color: #00e0d1;
+  box-shadow: -0.5px 3.5px 0px -1px #6cf9f2;
+  color: black;
 }
 
 @media only screen and (min-width: 430px) {

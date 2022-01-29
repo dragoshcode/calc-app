@@ -3,6 +3,7 @@
 body {
   background-color: v.$very-dark-desaturated-blue-main-bg;
   overflow: hidden;
+  transition: .2s linear;
 }
 
 main {
@@ -26,7 +27,7 @@ header {
     align-items: end;
 
     &__title {
-      button {
+      h2 {
         color: v.$white;
         font-size: 1rem;
       }
@@ -35,6 +36,7 @@ header {
     &__toggle {
       align-items: center;
       gap: 0.25rem;
+
       &-nums {
         gap: 1rem;
         button {
@@ -45,40 +47,21 @@ header {
 
       &-field {
         background-color: v.$very-dark-desaturated-blue-keypad-bg;
-        padding: 0.1rem 0.35rem;
         border-radius: 1rem;
-        position: relative;
-        cursor: pointer;
-        input {
-          cursor: pointer;
-          opacity: 0.1;
-        }
+        width: 4rem;
 
         .switcher {
-          position: absolute;
           width: 1rem;
           height: 1rem;
           background-color: v.$red;
           border-radius: 50%;
-          top: 0.29rem;
-          left: 0.625rem;
           pointer-events: none;
-          transition: 0.2s linear;
+
         }
       }
     }
   }
 }
-
-// .translate-to-two {
-//   left: 2rem;
-// }
-// .translate-to-three {
-//   left: 3.3rem;
-// }
-// .translate-to-one {
-//   left: 0.625rem;
-// }
 
 .input {
   input {

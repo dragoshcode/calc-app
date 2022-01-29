@@ -1,1 +1,51 @@
 @use 'variables' as v;
+
+body.purple-theme {
+  background-color: v.$very-dark-violet-bg;
+}
+
+body.purple-theme .title {
+  color: v.$light-yellow;
+}
+
+body.purple-theme .theme__title h2 {
+  color: v.$light-yellow;
+}
+
+body.purple-theme .theme__toggle-nums button {
+  color: v.$light-yellow;
+}
+
+body.purple-theme .theme__toggle-field {
+  background-color: v.$very-dark-violet;
+
+  .switcher {
+    background-color: v.$pure-cyan;
+  }
+}
+body.purple-theme input {
+  background-color: v.$very-dark-violet;
+  color: v.$light-yellow;
+}
+
+body.purple-theme .numbers {
+  background-color: v.$very-dark-violet;
+
+  button {
+    background-color: v.$very-dark-violet-key;
+    color: v.$light-yellow;
+    box-shadow: -0.5px 3.5px 0px -1px v.$dark-magenta;
+  }
+
+  .blue {
+    background-color: v.$dark-violet;
+    box-shadow: -0.5px 3.5px 0px -1px v.$vivid-magenta;
+    color: v.$white;
+  }
+
+  .red {
+    background-color: v.$pure-cyan;
+    box-shadow: -0.5px 3.5px 0px -1px v.$soft-cyan;
+    color: black;
+  }
+}
